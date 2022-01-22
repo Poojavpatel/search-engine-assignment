@@ -1,5 +1,5 @@
-const express = require('express');
-const routes = require('./routes/index');
+import express from "express";
+import { router as routes } from "./routes/index";
 
 const app = express();
 app.use(express.json());
@@ -11,6 +11,7 @@ app.get('/' ,(req,res) => {
 app.use('/api' , routes);
 
 const port = process.env.PORT || 5000;
+// tslint:disable-next-line:no-console
 app.listen(port, () => console.log(`Server started at port ${port}`));
 
 module.exports = app;

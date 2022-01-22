@@ -1,4 +1,4 @@
-const devConfig = require('./dev');
+import { devConfig } from './dev';
 
 let config = {};
 switch (process.env.APP_ENV) {
@@ -10,4 +10,4 @@ switch (process.env.APP_ENV) {
     break;
 }
 
-module.exports = config;
+export {config}

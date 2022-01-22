@@ -1,4 +1,2 @@
-const devConfig = {
+export const devConfig = {
 }
-
-module.exports = devConfig;
